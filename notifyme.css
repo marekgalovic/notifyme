@@ -1,0 +1,14 @@
+div, span, p, i, a{margin:0; padding:0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
+div.notifyme_wrap{position: absolute; width: 200px; height: auto; z-index:9999; font-family: Arial, sans-serif; line-height: 20px;}
+div.notifyme_wrap.topleft{top: 25px; left: 25px;}
+div.notifyme_wrap.topright{top: 25px; right: 25px;}
+div.notifyme_wrap.bottomleft{bottom: 25px; left: 25px;}
+div.notifyme_wrap.bottomright{bottom: 25px; right: 25px;}
+div.notifyme_notification{position:relative; float: left; width: 100%; max-height: 200px; margin-bottom: 10px; border-width: 1px; border-style: solid; border-radius: 4px; padding:5px;}
+div.notifyme_notification:last-child{margin-bottom: 0px;}
+div.notifyme_notification.success{background: rgba(39, 174, 96, 0.6); border-color: rgba(39, 174, 96, 1);}
+div.notifyme_notification.error{background: rgba(192, 57, 43, 0.6); border-color: rgba(192, 57, 43, 1);}
+div.notifyme_notification.alert{background: rgba(230, 126, 34, 0.6); border-color: rgba(230, 126, 34, 1);}
+div.notifyme_notification .notifyme_closer{position: absolute; width: 20px; height: 20px; top: -10px; right: -10px; cursor:pointer;}
+div.notifyme_notification .head{float: left; width: 100%; max-height: 40px; font-size: 14px; line-height:20px; font-weight: 600; padding:0 10px 0 0; color:rgba(0, 0, 0, 0.7); text-overflow: ellipsis;}
+div.notifyme_notification .body{float: left; width: 100%; max-height: 150px; font-size: 14px; font-weight: 400;}  

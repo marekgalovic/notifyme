@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="notifyme.css">
+	<script type="text/javascript" src="notifyme.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+			notifyme.config({
+				showtime: 4000,
+				position: "topright"
+			});
+		$("#error").click(function(){
+			notifyme.create({
+				title: "This is error notification",
+				text: "This is error notification text",
+				type: "error"
+			});
+		});
+
+		$("#success").click(function(){
+			notifyme.create({
+				title: "This is success notification",
+				text: "This is success notification text",
+				type: "success"
+			});
+		});
+
+		$("#alert").click(function(){
+			notifyme.create({
+				title: "This is just alert notification",
+				text: "This is just alert notification text",
+				type: "alert"
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<button id="success">Success</button>
+	<button id="error">Error</button>
+	<button id="alert">Warning</button>
+</body>
+</html>
